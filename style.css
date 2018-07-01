@@ -1,0 +1,268 @@
+* {
+  box-sizing: border-box;
+  transition: all ease-in-out 250ms;
+}
+
+body {
+  background-color:	#FFF;
+  margin: 0;
+  font-family: "Raleway", sans-serif;
+  font-weight: 100;
+  position: relative;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Header navigation
+======================= */
+
+header {
+  background-color: #000;
+  text-align: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 9999;
+}
+
+nav {
+ text-align: center;
+}
+
+nav ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+nav li {
+  display: inline-block;
+  margin: 0.6em 0.2em;
+}
+
+nav a {
+  color: #FFFFFF;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 1.5rem;
+  font-weight: 900;
+  padding: 0.6em;
+}
+nav a:hover {
+  color: #7B7C80;
+  text-decoration: none;
+}
+
+/* Container
+======================= */
+
+.container {
+  width: 100%;
+  margin: 0 auto;
+  position: relative;
+}
+
+.section-title {
+  text-transform: uppercase;
+  color: #000;
+  font-weight: 600;
+  border-left: #000 solid .05em;
+  padding-left: 0.5em;
+  margin-bottom: 1em;
+}
+
+p {
+  line-height: 1.6em;
+}
+
+p:last-of-type {
+
+}
+
+/* Part one (About me)
+======================= */
+
+.bkgimg {
+  margin-top: 3em;
+  width: 100%;
+  background-image: url(https://images.unsplash.com/photo-1497968021412-a86898ccbc4a?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&s=bc1a3c18e237a776c8c79a6e9d7a5584/1920x1080);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  overflow: auto;
+  box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, .50);
+  padding: 3em 0;
+}
+
+.part-one {
+  text-align: left;
+  width: 60%;
+  float: left;
+  color: #FFF;
+  margin: 0 auto;
+  padding-left: 20%;
+}
+
+.part-one h1 {
+  color: #FFF;
+  border-color: #FFF;
+}
+
+.profile-img {
+  width: 25%;
+  margin: 2em;
+  float: right;
+
+}
+
+#about-img {
+  border: #000 solid 7px;
+  border-radius: 100%;
+  width: 75%;
+  height: auto;
+}
+
+/* Part two (Portfolio)
+======================= */
+
+.part-two {
+  margin: 0 auto;
+  text-align: left;
+  width: 60%;
+  padding: 3em 0;
+  clear: both:
+  display: block;
+}
+
+.photo-left {
+  width: 50%;
+  float: left;
+  position: relative;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+.photo-left img {
+  display: block;
+}
+
+.photo-right {
+  width: 50%;
+  position: relative;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+.photo-right img {
+  display: block;
+}
+
+figcaption {
+  position: absolute;
+  z-index: 100;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  color: #FFF;
+  background-color: rgba(0, 0, 0, 0.75);
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  transform: translateY(150%);
+}
+
+.photo-left:hover figcaption {
+  transform: translateY(0%);
+}
+
+.photo-right:hover figcaption {
+  transform: translateY(0%);
+}
+
+/* Part three (Contact)
+======================= */
+
+.part-three {
+  margin: 0 auto;
+  width: 60%;
+  padding-top: 3m 0;
+  clear: both;
+}
+
+.form-contact {
+
+}
+
+form div {
+  margin: 3em 2em;
+}
+
+input[type=text], [type=email], textarea {
+  width: 100%;
+  padding: 0.5em;
+  resize: vertical;
+  font-family: "Raleway", sans-serif;
+  border: #000 solid .05em;
+}
+
+input[type=submit] {
+  border: #000 solid .05em;
+  background-color: #FFF;
+  padding: 0.5em 1em;
+}
+input[type=submit]:hover {
+  color: #CBCBCB;
+  border: #CBCBCB solid .05em;
+  background-color: #FFF;
+  padding: 0.5em 1em;
+}
+
+/* Footer
+======================= */
+
+footer {
+  background-color: #000;
+  color: #FFF:
+  bottom: 0;
+  left: 0;
+  right: 0;
+  position: absolute;
+}
+
+footer p {
+  color: #FFF;
+  padding: 1em 0;
+  text-align: center;
+}
+
+.fa {
+  padding: 1em;
+  font-size: 3em;
+  width: 3em;
+  color: #FFF;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 50%;
+  border: #FFF solid .1em;
+}
+
+.fa:hover {
+  background-color: #FFF;
+  color: #000;
+}
+
+.fa-facebook {
+  position: absolute;
+  bottom: 1em;
+  right: 4.5em;
+}
+
+.fa-twitter {
+  position: absolute;
+  bottom: 1em;
+  right: 1em;
+}
